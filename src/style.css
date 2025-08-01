@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+@layer components {
+  .text-gradient {
+    @apply bg-gradient-to-r from-purple-700 to-purple-100 bg-clip-text text-transparent;
+  }
+}
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.animate__animated.animate__fadeInDown.aniamte__delay-1 {
+  --animate-delay: 1s;
+}
+
+p,
+span,
+h1,
+h2,
+h3,
+h4 {
+  width: fit-content;
+}
+
+button {
+  cursor: pointer;
+}
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  position: relative;
+  bottom: auto;
+}
+
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  background-color: oklch(97.7% 0.014 308.299 / 1);
+}
+
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: oklch(49.6% 0.265 301.924);
+  width: 24px;
+  border-radius: 4px;
+  animation: widen 0.3s ease-out forwards;
+}
+
+.castlebird-swiper .swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes widen {
+  0% {
+    width: 8px;
+    border-radius: 50%;
+  }
+  100% {
+    width: 20px;
+    border-radius: 4px;
+  }
+}

@@ -1,0 +1,1020 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/src/style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>Phoenix Portfolio</title>
+  </head>
+  <body
+    class="bg-black"
+    class="w-full bg-purple-950/20 [&_a]:underline [&_a]:text-purple-400"
+  >
+    <header
+      class="w-full flex items-center justify-center px-4 py-8 lg:px-24 xl:px-0 bg-purple-950/30"
+    >
+      <div class="flex items-center justify-between container">
+        <p class="text-4xl font-bold">Phoenix.</p>
+        <div id="openMenuBtn" class="lg:hidden">
+          <i class="text-4xl fa-solid fa-bars"></i>
+        </div>
+        <ul
+          class="hidden lg:flex items-center space-x-8 [&_button]:hover:text-purple-500 [&_button]:hover:transition-colors"
+        >
+          <li>
+            <button class="header-button" data-id="about">About Me</button>
+          </li>
+          <li>
+            <button class="header-button" data-id="skills">Skills</button>
+          </li>
+          <li>
+            <button class="header-button" data-id="experience">
+              Experience
+            </button>
+          </li>
+          <li>
+            <button
+              class="header-button bg-gradient-to-l from-purple-900 to-purple-500 hover:from-purple-500 hover:to-purple-900 transition-all px-4 py-2 rounded-full hover:text-white! font-bold"
+              data-id="contact"
+            >
+              Contact Me
+            </button>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main
+      class="[&>_section]:px-4 [&>_section]:py-16 [&>_section]:lg:p-24 [&>_section]:xl:px-0 [&>.highlight]:bg-purple-950/30"
+    >
+      <!-- Hero Section -->
+      <section id="about" class="relative overflow-hidden">
+        <div
+          class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-purple-700/40 rounded-full w-[800px] h-[400px] blur-[200px]"
+        ></div>
+        <div class="container flex lg:space-x-24 items-center z-10">
+          <div class="flex flex-col gap-8 flex-1">
+            <div class="flex flex-col space-y-4">
+              <h3 class="text-2xl font-bold animate__animated animate__bounce">
+                I am Dũng
+              </h3>
+              <h1 class="text-6xl lg:text-8xl font-bold text-gradient">
+                A Web Developer.
+              </h1>
+              <div
+                class="my-6! w-full lg:hidden overflow-hidden aspect-square border border-purple-700 bg-purple-900 rounded-4xl rotate-2 hover:transition-all hover:rotate-0 hover:border-purple-500"
+              >
+                <img src="public/avatar.jpg" class="w-full" />
+              </div>
+              <p class="text-xl lg:max-w-[70%]">
+                I break down complex frontend challenges into intuitive,
+                scalable solutions. With a passion for crafting seamless user
+                experiences, I embrace new technologies and deliver value-driven
+                interfaces that support product integrity and business growth.
+              </p>
+            </div>
+            <div class="flex items-center space-x-4">
+              <!-- <button
+                class="flex w-fit items-center space-x-4 rounded-full border border-purple-500 px-6 h-[50px]"
+              >
+                <p class="font-bold">Download CV</p>
+                <i class="fa-solid fa-download"></i>
+              </button> -->
+              <button
+                class="header-button bg-gradient-to-l from-purple-900 to-purple-500 hover:from-purple-500 hover:to-purple-900 transition-all px-4 py-2 rounded-full hover:text-white! font-bold h-[50px]"
+                data-id="contact"
+              >
+                Contact Me
+              </button>
+              <a
+                href="www.linkedin.com/in/trung-dũng-nguyễn-frontenddeveloper1999"
+                target="_blank"
+                class="size-[50px] rounded-full border border-purple-500 flex items-center justify-center !no-underline"
+              >
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="hidden lg:block w-1/3 max-w-[550px] overflow-hidden aspect-square border border-purple-700 bg-purple-900 rounded-4xl rotate-2 hover:transition-all hover:rotate-0 hover:border-purple-500"
+          >
+            <img src="public/avatar.jpg" class="w-full" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section id="skills" class="highlight">
+        <div class="container space-y-8">
+          <div class="space-y-8">
+            <div class="flex flex-col items-center space-y-3">
+              <h2
+                class="text-3xl lg:text-5xl text-center font-bold text-gradient"
+              >
+                My Stacks
+              </h2>
+              <p class="text-base lg:text-lg text-center">
+                I use modern tools and technologies to build clean, responsive,
+                and user-friendly websites.
+              </p>
+            </div>
+            <div
+              class="grid grid-cols-2 lg:grid-cols-5 max-w-5xl mx-auto gap-6"
+            >
+              <div
+                class="flex flex-col items-center space-y-2 group animate__animated animate__fadeInDown"
+              >
+                <div
+                  class="w-full aspect-square bg-black/20 border border-transparent transition-colors group-hover:bg-purple-950/50 group-hover:border-purple-800/50 rounded-4xl flex items-center justify-center"
+                >
+                  <img
+                    loading="lazy"
+                    alt="figma icon"
+                    class="w-1/3 grayscale transition-all group-hover:grayscale-0 group-hover:scale-105"
+                    src="/public/figma.png"
+                  />
+                </div>
+                <p class="font-medium text-center">Figma</p>
+              </div>
+              <div
+                class="flex flex-col items-center space-y-2 group animate__animated animate__fadeInDown"
+                style="animation-delay: 0.2s"
+              >
+                <div
+                  class="w-full aspect-square bg-black/20 border border-transparent transition-colors group-hover:bg-purple-950/50 group-hover:border-purple-800/50 rounded-4xl flex items-center justify-center"
+                >
+                  <img
+                    loading="lazy"
+                    alt="figma icon"
+                    class="w-1/3 grayscale transition-all group-hover:grayscale-0 group-hover:scale-105"
+                    src="/public/social.png"
+                  />
+                </div>
+                <p class="font-medium text-center">Git</p>
+              </div>
+              <div
+                class="flex flex-col items-center space-y-2 group animate__animated animate__fadeInDown"
+                style="animation-delay: 0.4s"
+              >
+                <div
+                  class="w-full aspect-square bg-black/20 border border-transparent transition-colors group-hover:bg-purple-950/50 group-hover:border-purple-800/50 rounded-4xl flex items-center justify-center"
+                >
+                  <img
+                    loading="lazy"
+                    alt="figma icon"
+                    class="w-1/3 grayscale transition-all group-hover:grayscale-0 group-hover:scale-105"
+                    src="/public/tailwindcss.svg"
+                  />
+                </div>
+                <p class="font-medium text-center">TailwindCss</p>
+              </div>
+              <div
+                class="flex flex-col items-center space-y-2 group animate__animated animate__fadeInDown"
+                style="animation-delay: 0.6s"
+              >
+                <div
+                  class="w-full aspect-square bg-black/20 border border-transparent transition-colors group-hover:bg-purple-950/50 group-hover:border-purple-800/50 rounded-4xl flex items-center justify-center"
+                >
+                  <img
+                    loading="lazy"
+                    alt="figma icon"
+                    class="w-1/3 grayscale transition-all group-hover:grayscale-0 group-hover:scale-105"
+                    src="/public/js.png"
+                  />
+                </div>
+                <p class="font-medium text-center">Javascript</p>
+              </div>
+              <div
+                class="flex flex-col items-center space-y-2 group animate__animated animate__fadeInDown"
+                style="animation-delay: 0.8s"
+              >
+                <div
+                  class="w-full aspect-square bg-black/20 border border-transparent transition-colors group-hover:bg-purple-950/50 group-hover:border-purple-800/50 rounded-4xl flex items-center justify-center"
+                >
+                  <img
+                    loading="lazy"
+                    alt="figma icon"
+                    class="w-1/3 grayscale transition-all group-hover:grayscale-0 group-hover:scale-105"
+                    src="/public/physics.png"
+                  />
+                </div>
+                <p class="font-medium text-center">ReactJS</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Works -->
+      <section id="experience">
+        <div class="container space-y-8">
+          <div class="flex flex-col items-center space-y-3">
+            <h2
+              class="text-3xl lg:text-5xl text-center font-bold text-gradient"
+            >
+              My Recent Works
+            </h2>
+            <p class="text-base lg:text-lg text-center">
+              Here are some of my past projects where I contributed meaningful
+              features <br />
+              that improved the overall product experience
+            </p>
+          </div>
+          <!-- Tabs -->
+          <div id="works-tab" class="[&_.content hidden]:mt-6">
+            <!-- Tab Headers -->
+            <div
+              class="headers hidden lg:grid grid-cols-3 gap-4 mx-auto items-stretch"
+            >
+              <div
+                class="header flex flex-col items-center group h-full active"
+                data-swiper="0"
+              >
+                <button
+                  class="p-8 flex-1 w-full rounded-2xl bg-white/10 hover:bg-purple-950 group-[.active]:bg-purple-900 transition-colors space-y-1 flex flex-col items-start"
+                >
+                  <p class="text-xs">4/2024-7/2025</p>
+                  <h4 class="text-2xl font-bold">WOW3.APP</h4>
+                  <p>Frontend Web Developer</p>
+                </button>
+                <span
+                  class="group-[.active]:text-purple-700 fa-solid fa-caret-down fa-3x -mt-2 text-white/10"
+                ></span>
+              </div>
+              <div
+                class="header flex flex-col items-center group"
+                data-swiper="1"
+              >
+                <button
+                  class="p-8 flex-1 w-full rounded-2xl bg-white/10 hover:bg-purple-950 group-[.active]:bg-purple-900 transition-colors space-y-1 flex flex-col items-start"
+                >
+                  <p class="text-xs">11/2022-4/2024</p>
+                  <h4 class="text-2xl font-bold">Castlebird</h4>
+                  <p>Frontend Developer</p>
+                </button>
+                <span
+                  class="group-[.active]:text-purple-700 fa-solid fa-caret-down fa-3x -mt-2 text-white/10"
+                ></span>
+              </div>
+              <div
+                class="header flex flex-col items-center group"
+                data-swiper="2"
+              >
+                <button
+                  class="p-8 flex-1 w-full rounded-2xl bg-white/10 hover:bg-purple-950 group-[.active]:bg-purple-900 transition-colors space-y-1 flex flex-col items-start"
+                >
+                  <p class="text-xs">2012-2013</p>
+                  <h4 class="text-2xl font-bold text-left">
+                    Minerva Technology Solutions
+                  </h4>
+                  <p>Frontend Web Developer</p>
+                </button>
+                <span
+                  class="group-[.active]:text-purple-700 fa-solid fa-caret-down fa-3x -mt-2 text-white/10"
+                ></span>
+              </div>
+            </div>
+            <!-- Tab Contents -->
+
+            <div class="swiper works-swiper">
+              <div class="swiper-wrapper">
+                <!-- WOW3 -->
+                <div class="swiper-slide rounded-lg">
+                  <div
+                    class="content w-full mx-auto p-4 lg:p-8 rounded-2xl space-y-10 animate__animated animate__fadeIn"
+                  >
+                    <div class="grid grid-cols-2 gap-8 items-end">
+                      <div class="space-y-4 col-span-full lg:col-span-1">
+                        <h3
+                          class="text-2xl lg:lg:text-4xl font-black text-gradient"
+                        >
+                          Blockchain Portfolio for RON
+                        </h3>
+                        <p class="">
+                          <a href="https://wow3.app/" rel="" target="_blank"
+                            >WOW3.APP</a
+                          >
+                          - Track crypto, NFTs & DeFi across chains — with
+                          AI-powered performance insights. (Connect wallets,
+                          monitor assets, and unlock smarter decisions with
+                          next-gen AI analytics)
+                        </p>
+                      </div>
+                      <div
+                        class="col-span-full lg:col-span-1 grid grid-cols-2 gap-4"
+                      >
+                        <div>
+                          <p class="">Category</p>
+                          <p class="font-bold">Web3 Portfolio</p>
+                        </div>
+                        <div>
+                          <p class="">Company</p>
+                          <p class="font-bold">WOW3.APP</p>
+                        </div>
+                        <div>
+                          <p class="">Product</p>
+                          <p class="font-bold">In-house</p>
+                        </div>
+                        <div>
+                          <p>My Main Stacks</p>
+                          <p class="font-bold">
+                            React, TailwindCss, Typescript, Framer, Recharts,
+                            React-Query
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div>
+                      <div
+                        class="grid grid-cols-1 lg:grid-cols-3 gap-4 lg:gap-24"
+                      >
+                        <div>
+                          <h3 class="text-2xl font-bold text-nowrap">
+                            My Responsibility
+                          </h3>
+                          <p>Frontend Web</p>
+                        </div>
+                        <p class="col-span-2">
+                          Developed a cohesive UI component library using
+                          ShadcnUI, creating a consistent design system across
+                          the application. Integrated smart contract
+                          interactions with Wagmi, enabling seamless
+                          blockchain-based actions directly from the UI.
+                          <br />
+                          <br />
+                          <strong>Landing Page:</strong> Co-designed an engaging
+                          landing page with smooth, dynamic animations using
+                          Framer Motion to enhance user experience.
+                          <br />
+                          <br />
+                          <strong>The NFT:</strong> Fetched and managed NFT data
+                          using React Query, displayed through a dynamic grid
+                          with detailed modals. Visualized insights using
+                          Recharts (PieCharts, Heatmaps), and implemented key
+                          features like gifting and premium claiming with wallet
+                          signature handling. Integrated Spine animations for
+                          NFT reveals like Chika Egg.
+                          <br />
+                          <br />
+                          <strong>The Engagement:</strong> Built a user
+                          dashboard to track contest activity, quest progress,
+                          and rewards. Managed state with React Query,
+                          implemented countdown timers, leaderboards with
+                          pagination, and a referral program with auto-applied
+                          codes.
+                          <br />
+                          <br />
+                        </p>
+                      </div>
+                      <!-- Slider main container -->
+                      <div class="swiper wow3-swiper w-full mt-6">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                          <!-- Slides -->
+                          <div
+                            class="swiper-slide aspect-video overflow-hidden"
+                          >
+                            <img
+                              loading="lazy"
+                              class="w-full"
+                              src="/public/wow3/wow3-1.png"
+                            />
+                          </div>
+                          <div
+                            class="swiper-slide aspect-video overflow-hidden"
+                          >
+                            <img
+                              loading="lazy"
+                              class="w-full"
+                              src="/public/wow3/wow3-2.png"
+                            />
+                          </div>
+                          <div
+                            class="swiper-slide aspect-video overflow-hidden"
+                          >
+                            <img
+                              loading="lazy"
+                              class="w-full"
+                              src="/public/wow3/wow3-3.png"
+                            />
+                          </div>
+                          <div
+                            class="swiper-slide aspect-video overflow-hidden"
+                          >
+                            <img
+                              loading="lazy"
+                              class="w-full"
+                              src="/public/wow3/wow3-4.png"
+                            />
+                          </div>
+                          <div
+                            class="swiper-slide aspect-video overflow-hidden"
+                          >
+                            <img
+                              loading="lazy"
+                              class="w-full"
+                              src="/public/wow3/wow3-5.png"
+                            />
+                          </div>
+                          <div
+                            class="swiper-slide aspect-video overflow-hidden"
+                          >
+                            <img
+                              loading="lazy"
+                              class="w-full"
+                              src="/public/wow3/wow3-6.png"
+                            />
+                          </div>
+                          <div
+                            class="swiper-slide aspect-video overflow-hidden"
+                          >
+                            <img
+                              loading="lazy"
+                              class="w-full"
+                              src="/public/wow3/wow3-7.png"
+                            />
+                          </div>
+                          <div
+                            class="swiper-slide aspect-video overflow-hidden"
+                          >
+                            <img
+                              loading="lazy"
+                              class="w-full"
+                              src="/public/wow3/wow3-8.png"
+                            />
+                          </div>
+                          <div
+                            class="swiper-slide aspect-video overflow-hidden"
+                          >
+                            <img
+                              loading="lazy"
+                              class="w-full"
+                              src="/public/wow3/wow3-9.png"
+                            />
+                          </div>
+                          <div
+                            class="swiper-slide aspect-video overflow-hidden"
+                          >
+                            <img
+                              loading="lazy"
+                              class="w-full"
+                              src="/public/wow3/wow3-10.png"
+                            />
+                          </div>
+                          <div
+                            class="swiper-slide aspect-video overflow-hidden"
+                          >
+                            <img
+                              loading="lazy"
+                              class="w-full"
+                              src="/public/wow3/wow3-11.png"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="relative mt-2">
+                        <div class="wow3-swiper-pagination"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- CastleBird -->
+                <div class="swiper-slide">
+                  <div
+                    class="content w-full mx-auto p-4 lg:p-8 rounded-2xl space-y-10 animate__animated animate__fadeIn"
+                  >
+                    <div
+                      class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-end"
+                    >
+                      <div class="space-y-4">
+                        <h3
+                          class="text-2xl lg:text-4xl font-black text-gradient"
+                        >
+                          No-Code Personal Portfolio Builder
+                        </h3>
+                        <p class="">
+                          <a
+                            href="https://castlebird.com/"
+                            rel=""
+                            target="_blank"
+                            class="text-purple-400 underline"
+                            >Castlebird</a
+                          >
+                          - The all-in-one mobile app that makes managing your
+                          business a breeze, wherever you are. Create stunning
+                          your own website without any coding, with the help of
+                          AI in content writing, image generating
+                        </p>
+                      </div>
+                      <div class="grid grid-cols-2 gap-4">
+                        <div>
+                          <p class="">Category</p>
+                          <p class="font-bold">Portfolio Builder</p>
+                        </div>
+                        <div>
+                          <p class="">Company</p>
+                          <p class="font-bold">Castlebird</p>
+                        </div>
+                        <div>
+                          <p class="">Product</p>
+                          <p class="font-bold">In-house</p>
+                        </div>
+                        <div>
+                          <p>My Main Stacks</p>
+                          <p class="font-bold">
+                            React, Flutter, TailwindCss, Typescript
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div>
+                      <div
+                        class="grid grid-cols-1 lg:grid-cols-3 gap-4 lg:gap-24"
+                      >
+                        <div>
+                          <h3 class="text-2xl font-bold text-nowrap">
+                            My Responsibility
+                          </h3>
+                          <p>Frontend for App and Web</p>
+                        </div>
+                        <p class="col-span-2">
+                          <strong>The App:</strong> Castlebird is an app that
+                          enables users to create personalized portfolios using
+                          predefined templates tailored to their profession or
+                          field. Users can choose a custom domain, write content
+                          for various sections, and even generate images to
+                          enhance their portfolios. I inherited the project from
+                          a senior developer and began learning Flutter on the
+                          job. Working closely with our designer for UI assets
+                          and the backend team for APIs, I initially faced
+                          challenges but overcame them after the first month.
+                          Eventually, I gained a solid understanding of managing
+                          state across multiple Flutter screens, handling user
+                          input forms, implementing loading states for
+                          AI-generated content, and allowing layout or color
+                          customization for individual sections.
+                          <br />
+                          <br />
+                          <strong>The Website:</strong> After creating their
+                          portfolio and writing content, users can visit and
+                          share their personal website with others. I broke down
+                          the layout into modular components, dynamically
+                          rendering each section based on the user’s selected
+                          layout type. My main responsibilities included
+                          converting UI designs into functional components,
+                          mapping content from the API to the corresponding
+                          sections, and ensuring the website is fully responsive
+                          across different screen sizes.
+                        </p>
+                      </div>
+                      <!-- Slider main container -->
+                      <div class="swiper castlebird-swiper w-full mt-6">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                          <!-- Slides -->
+                          <div
+                            class="swiper-slide aspect-video overflow-hidden"
+                          >
+                            <img
+                              loading="lazy"
+                              class="w-full"
+                              src="/public/castlebird/castlebird-1.png"
+                            />
+                          </div>
+                          <div
+                            class="swiper-slide aspect-video overflow-hidden"
+                          >
+                            <img
+                              loading="lazy"
+                              class="w-full"
+                              src="/public/castlebird/castlebird-2.png"
+                            />
+                          </div>
+                          <div
+                            class="swiper-slide aspect-video overflow-hidden"
+                          >
+                            <img
+                              loading="lazy"
+                              class="w-full"
+                              src="/public/castlebird/castlebird-3.png"
+                            />
+                          </div>
+                          <div
+                            class="swiper-slide aspect-video overflow-hidden"
+                          >
+                            <img
+                              loading="lazy"
+                              class="w-full"
+                              src="/public/castlebird/castlebird-4.png"
+                            />
+                          </div>
+                          <div
+                            class="swiper-slide aspect-video overflow-hidden"
+                          >
+                            <img
+                              loading="lazy"
+                              class="w-full"
+                              src="/public/castlebird/castlebird-5.png"
+                            />
+                          </div>
+                          <div
+                            class="swiper-slide aspect-video overflow-hidden"
+                          >
+                            <img
+                              loading="lazy"
+                              class="w-full"
+                              src="/public/castlebird/castlebird-6.png"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="relative mt-2">
+                        <div class="castlebird-swiper-pagination"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- SCB -->
+                <div class="swiper-slide">
+                  <div
+                    class="content w-full mx-auto p-4 lg:p-8 rounded-2xl space-y-10 animate__animated animate__fadeIn"
+                  >
+                    <div
+                      class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start"
+                    >
+                      <div class="space-y-4">
+                        <h3
+                          class="text-2xl lg:text-4xl font-black text-gradient"
+                        >
+                          SCB Admin Site
+                        </h3>
+                        <p class="leading-relaxed">
+                          <strong>MINERVA TECHNOLOGY SOLUTIONS JSC</strong>
+                          provides SCB Bank with an internal management platform
+                          featuring policy lookup, staff directories, task
+                          management, real-time notifications, schedules, and
+                          meeting tools. Users can view colleagues’ calendars,
+                          track holidays, and filter schedules by category.
+                        </p>
+                      </div>
+                      <div class="grid grid-cols-2 gap-4">
+                        <div>
+                          <p class="">Category</p>
+                          <p class="font-bold">Internal Website for Corp</p>
+                        </div>
+                        <div>
+                          <p class="">Company</p>
+                          <p class="font-bold">
+                            MINERVA TECHNOLOGY SOLUTIONS JSC
+                          </p>
+                        </div>
+
+                        <div>
+                          <p class="">Client</p>
+                          <p class="font-bold">
+                            Sai Gon Joint Stock<br />
+                            Commercial Bank(SCB)
+                          </p>
+                        </div>
+                        <div>
+                          <p class="">My Main Stacks</p>
+                          <p class="font-bold">React, Redux, Typescript</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div>
+                      <div
+                        class="grid grid-cols-1 lg:grid-cols-3 gap-4 lg:gap-24"
+                      >
+                        <div>
+                          <h3 class="text-2xl font-bold text-nowrap">
+                            My Responsibility
+                          </h3>
+                          <p>Feature: Calendar for Internal</p>
+                        </div>
+                        <p class="col-span-2 leading-relaxed">
+                          Collaborated with teammates via GitLab to ensure
+                          seamless coding and conflict-free merging. Took charge
+                          of developing the UI and making the calendar feature
+                          responsive on the website. Managed state using Redux
+                          and handled backend API calls with Redux Saga. Used
+                          the
+                          <a
+                            href="https://www.npmjs.com/package/react-big-calendar"
+                            rel=""
+                            target="_blank"
+                            class="text-purple-300"
+                            >React-Big-Calendar</a
+                          >
+                          package and customized it based on Figma designs.
+                        </p>
+                      </div>
+                      <!-- Slider main container -->
+                      <div class="swiper minerva-swiper w-full mt-6">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                          <!-- Slides -->
+                          <div class="swiper-slide">
+                            <img
+                              loading="lazy"
+                              class="w-full"
+                              src="/public/minerva/minerva-1.png"
+                            />
+                          </div>
+                          <div class="swiper-slide">
+                            <img
+                              loading="lazy"
+                              class="w-full"
+                              src="/public/minerva/minerva-2.png"
+                            />
+                          </div>
+                          <div class="swiper-slide">
+                            <img
+                              loading="lazy"
+                              class="w-full"
+                              src="/public/minerva/minerva-3.png"
+                            />
+                          </div>
+                          <div class="swiper-slide">
+                            <img
+                              loading="lazy"
+                              class="w-full"
+                              src="/public/minerva/minerva-4.png"
+                            />
+                          </div>
+                          <div class="swiper-slide">
+                            <img
+                              loading="lazy"
+                              class="w-full"
+                              src="/public/minerva/minerva-5.png"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="relative mt-2">
+                        <div class="minerva-swiper-pagination"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="highlight">
+        <div
+          class="container grid grid-cols-1 lg:grid-cols-2 gap-16 items-center justify-items-center"
+        >
+          <div class="space-y-4 lg:p-8 rounded-2xl">
+            <div class="flex flex-col space-y-1">
+              <h2 class="text-4xl font-black text-gradient">
+                LET'S WORK TOGETHER
+              </h2>
+              <p class="">
+                I design and build clean, user-friendly websites — and I
+                genuinely enjoy every part of the process. It’s as simple as
+                that.
+              </p>
+            </div>
+            <form class="space-y-3">
+              <div class="flex flex-col space-y-2">
+                <label for="username">Your Email:</label>
+                <input
+                  type="text"
+                  id="mailAddress"
+                  class="border border-gray-700 px-4 py-2 rounded-xl focus-visible:outline-0 focus:border-purple-800 transition-colors"
+                  name="mailAddress"
+                />
+              </div>
+              <div class="flex flex-col space-y-2">
+                <label for="message">Message:</label>
+                <textarea
+                  rows="4"
+                  type="text"
+                  id="mailBody"
+                  name="mailBody"
+                  class="border border-gray-700 px-4 py-2 rounded-xl focus-visible:outline-0 focus:border-purple-800 transition-colors"
+                ></textarea>
+              </div>
+              <button
+                id="mailSubmit"
+                type="submit"
+                class="px-4 py-2 bg-gradient-to-r from-purple-800 to-purple-400 rounded-xl font-bold mt-3"
+              >
+                Send Message
+              </button>
+            </form>
+          </div>
+          <div
+            class="lg:p-8 space-y-6 [&_h4]:text-xl [&_h4]:lg:text-2xl [&_h4]:font-bold w-full"
+          >
+            <div class="flex items-center space-x-4">
+              <div
+                class="size-12 rounded-full bg-purple-800 flex items-center justify-center"
+              >
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div class="flex flex-col">
+                <p>Phone</p>
+                <h4>(+84) 961 048 128</h4>
+              </div>
+            </div>
+            <div class="flex items-center space-x-4">
+              <div
+                class="size-12 rounded-full bg-purple-800 flex items-center justify-center"
+              >
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div class="flex flex-col">
+                <p>Mail</p>
+                <h4>nguyentrungdung61@gmail.com</h4>
+              </div>
+            </div>
+            <div class="flex items-center space-x-4">
+              <div
+                class="size-12 rounded-full bg-purple-800 flex items-center justify-center"
+              >
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div class="flex flex-col">
+                <p>Address</p>
+                <h4>Binh Tan, HCMC</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div
+      id="mobile-menu"
+      class="fixed translate-x-full transition-all left-0 top-0 bottom-0 right-0 bg-black z-20 flex items-center justify-center"
+    >
+      <div id="closeMenuBtn">
+        <i class="absolute right-8 top-8 text-4xl fa-solid fa-xmark"></i>
+      </div>
+      <ul
+        class="flex flex-col items-center space-y-4 [&_button]:hover:text-purple-500 [&_button]:hover:transition-colors"
+      >
+        <li>
+          <button class="header-button text-2xl" data-id="about">
+            About Me
+          </button>
+        </li>
+        <li>
+          <button class="header-button text-2xl" data-id="skills">
+            Skills
+          </button>
+        </li>
+        <li>
+          <button class="header-button text-2xl" data-id="experience">
+            Experience
+          </button>
+        </li>
+        <li>
+          <button
+            class="header-button text-2xl bg-gradient-to-l from-purple-900 to-purple-500 hover:from-purple-500 hover:to-purple-900 transition-all px-8 py-4 rounded-full hover:text-white! font-bold"
+            data-id="contact"
+          >
+            Contact Me
+          </button>
+        </li>
+      </ul>
+    </div>
+    <div
+      class="fixed rounded-full right-8 bottom-8 size-14 border border-purple-950 text-purple-700 z-50 animate__animated"
+      id="btnScrollUp"
+    >
+      <i class="fas fa-arrow-up absolute top-1/2 left-1/2 -translate-1/2"></i>
+      <svg
+        class="progress-circle svg-content stroke-purple-100 stroke-2"
+        width="100%"
+        height="100%"
+        viewBox="-1 -1 102 102"
+      >
+        <path
+          d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"
+          style="
+            transition: stroke-dashoffset 10ms linear;
+            stroke-dasharray: 308;
+            stroke-dashoffset: 100;
+          "
+        ></path>
+      </svg>
+    </div>
+    <footer class="w-full flex flex-col items-center justify-center p-16">
+      <div
+        class="flex flex-col items-center justify-between container space-y-6"
+      >
+        <p class="text-4xl font-bold">Phoenix.</p>
+        <ul
+          class="hidden lg:flex items-center space-x-8 [&_button]:hover:text-purple-500 [&_button]:hover:transition-colors"
+        >
+          <li>
+            <button class="header-button" data-id="about">About Me</button>
+          </li>
+          <li>
+            <button class="header-button" data-id="skills">Skills</button>
+          </li>
+          <li>
+            <button class="header-button" data-id="experience">
+              Experience
+            </button>
+          </li>
+          <li>
+            <button
+              class="header-button bg-gradient-to-l from-purple-900 to-purple-500 hover:from-purple-500 hover:to-purple-900 transition-all px-4 py-2 rounded-full hover:text-white! font-bold"
+              data-id="contact"
+            >
+              Contact Me
+            </button>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      const worksSwiper = new Swiper(".works-swiper", {
+        spaceBetween: 16,
+      });
+      const minervaSwiper = new Swiper(".minerva-swiper", {
+        slidesPerView: 1,
+        spaceBetween: 16,
+        autoplay: {
+          delay: 1000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".minerva-swiper-pagination",
+        },
+        breakpoints: {
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 24,
+          },
+        },
+      });
+
+      const castleBirdSwiper = new Swiper(".castlebird-swiper", {
+        slidesPerView: 1,
+        spaceBetween: 16,
+        autoplay: {
+          delay: 1000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".castlebird-swiper-pagination",
+        },
+        breakpoints: {
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 24,
+          },
+        },
+      });
+
+      const wow3Swiper = new Swiper(".wow3-swiper", {
+        slidesPerView: 1,
+        spaceBetween: 16,
+        autoplay: {
+          delay: 1000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".wow3-swiper-pagination",
+        },
+        breakpoints: {
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 24,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
