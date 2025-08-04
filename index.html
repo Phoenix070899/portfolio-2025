@@ -17,6 +17,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <title>Phoenix Portfolio</title>
   </head>
   <body
@@ -57,7 +58,7 @@
       </div>
     </header>
     <main
-      class="[&>_section]:px-4 [&>_section]:py-16 [&>_section]:lg:p-24 [&>_section]:xl:px-0 [&>.highlight]:bg-purple-950/30"
+      class="[&>_section]:px-4 [&>_section]:py-16 [&>_section]:lg:py-24 [&>_section]:lg:p-24 [&>_section]:xl:px-0 [&>.highlight]:bg-purple-950/30"
     >
       <!-- Hero Section -->
       <section id="about" class="relative overflow-hidden">
@@ -67,18 +68,27 @@
         <div class="container flex lg:space-x-24 items-center z-10">
           <div class="flex flex-col gap-8 flex-1">
             <div class="flex flex-col space-y-4">
-              <h3 class="text-2xl font-bold animate__animated animate__bounce">
+              <h3 class="text-2xl font-bold" data-aos="fade-right">
                 I am Dũng
               </h3>
-              <h1 class="text-6xl lg:text-8xl font-bold text-gradient">
+              <h1
+                class="text-6xl lg:text-8xl font-bold text-gradient"
+                data-aos="fade-right"
+                data-aos-delay="200"
+              >
                 A Web Developer.
               </h1>
               <div
                 class="my-6! w-full lg:hidden overflow-hidden aspect-square border border-purple-700 bg-purple-900 rounded-4xl rotate-2 hover:transition-all hover:rotate-0 hover:border-purple-500"
+                data-aos="zoom-in"
               >
-                <img src="public/avatar.jpg" class="w-full" />
+                <img src="public/avatar.webp" class="w-full" />
               </div>
-              <p class="text-xl lg:max-w-[70%]">
+              <p
+                class="text-xl lg:max-w-[70%]"
+                data-aos="fade-right"
+                data-aos-delay="400"
+              >
                 I break down complex frontend challenges into intuitive,
                 scalable solutions. With a passion for crafting seamless user
                 experiences, I embrace new technologies and deliver value-driven
@@ -95,6 +105,8 @@
               <button
                 class="header-button bg-gradient-to-l from-purple-900 to-purple-500 hover:from-purple-500 hover:to-purple-900 transition-all px-4 py-2 rounded-full hover:text-white! font-bold h-[50px]"
                 data-id="contact"
+                data-aos="zoom-in"
+                data-aos-delay="600"
               >
                 Contact Me
               </button>
@@ -102,6 +114,8 @@
                 href="www.linkedin.com/in/trung-dũng-nguyễn-frontenddeveloper1999"
                 target="_blank"
                 class="size-[50px] rounded-full border border-purple-500 flex items-center justify-center !no-underline"
+                data-aos="zoom-in"
+                data-aos-delay="600"
               >
                 <i class="fa-brands fa-linkedin-in"></i>
               </a>
@@ -110,8 +124,9 @@
 
           <div
             class="hidden lg:block w-1/3 max-w-[550px] overflow-hidden aspect-square border border-purple-700 bg-purple-900 rounded-4xl rotate-2 hover:transition-all hover:rotate-0 hover:border-purple-500"
+            data-aos="zoom-in"
           >
-            <img src="public/avatar.jpg" class="w-full" />
+            <img src="public/avatar.webp" class="w-full" />
           </div>
         </div>
       </section>
@@ -135,7 +150,8 @@
               class="grid grid-cols-2 lg:grid-cols-5 max-w-5xl mx-auto gap-6"
             >
               <div
-                class="flex flex-col items-center space-y-2 group animate__animated animate__fadeInDown"
+                class="flex flex-col items-center space-y-2 group"
+                data-aos="fade-down"
               >
                 <div
                   class="w-full aspect-square bg-black/20 border border-transparent transition-colors group-hover:bg-purple-950/50 group-hover:border-purple-800/50 rounded-4xl flex items-center justify-center"
@@ -150,8 +166,9 @@
                 <p class="font-medium text-center">Figma</p>
               </div>
               <div
-                class="flex flex-col items-center space-y-2 group animate__animated animate__fadeInDown"
-                style="animation-delay: 0.2s"
+                class="flex flex-col items-center space-y-2 group"
+                data-aos="fade-down"
+                data-aos-delay="100"
               >
                 <div
                   class="w-full aspect-square bg-black/20 border border-transparent transition-colors group-hover:bg-purple-950/50 group-hover:border-purple-800/50 rounded-4xl flex items-center justify-center"
@@ -166,8 +183,9 @@
                 <p class="font-medium text-center">Git</p>
               </div>
               <div
-                class="flex flex-col items-center space-y-2 group animate__animated animate__fadeInDown"
-                style="animation-delay: 0.4s"
+                class="flex flex-col items-center space-y-2 group"
+                data-aos="fade-down"
+                data-aos-delay="200"
               >
                 <div
                   class="w-full aspect-square bg-black/20 border border-transparent transition-colors group-hover:bg-purple-950/50 group-hover:border-purple-800/50 rounded-4xl flex items-center justify-center"
@@ -182,8 +200,9 @@
                 <p class="font-medium text-center">TailwindCss</p>
               </div>
               <div
-                class="flex flex-col items-center space-y-2 group animate__animated animate__fadeInDown"
-                style="animation-delay: 0.6s"
+                class="flex flex-col items-center space-y-2 group"
+                data-aos="fade-down"
+                data-aos-delay="300"
               >
                 <div
                   class="w-full aspect-square bg-black/20 border border-transparent transition-colors group-hover:bg-purple-950/50 group-hover:border-purple-800/50 rounded-4xl flex items-center justify-center"
@@ -198,8 +217,9 @@
                 <p class="font-medium text-center">Javascript</p>
               </div>
               <div
-                class="flex flex-col items-center space-y-2 group animate__animated animate__fadeInDown"
-                style="animation-delay: 0.8s"
+                class="flex flex-col items-center space-y-2 group"
+                data-aos="fade-down"
+                data-aos-delay="400"
               >
                 <div
                   class="w-full aspect-square bg-black/20 border border-transparent transition-colors group-hover:bg-purple-950/50 group-hover:border-purple-800/50 rounded-4xl flex items-center justify-center"
@@ -224,10 +244,15 @@
           <div class="flex flex-col items-center space-y-3">
             <h2
               class="text-3xl lg:text-5xl text-center font-bold text-gradient"
+              data-aos="fade-down"
             >
               My Recent Works
             </h2>
-            <p class="text-base lg:text-lg text-center">
+            <p
+              class="text-base lg:text-lg text-center"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
               Here are some of my past projects where I contributed meaningful
               features <br />
               that improved the overall product experience
@@ -276,7 +301,7 @@
                 <button
                   class="p-8 flex-1 w-full rounded-2xl bg-white/10 hover:bg-purple-950 group-[.active]:bg-purple-900 transition-colors space-y-1 flex flex-col items-start"
                 >
-                  <p class="text-xs">2012-2013</p>
+                  <p class="text-xs">2012</p>
                   <h4 class="text-2xl font-bold text-left">
                     Minerva Technology Solutions
                   </h4>
@@ -287,6 +312,17 @@
                 ></span>
               </div>
             </div>
+
+            <!-- Swiper Navigation -->
+            <div
+              class="w-full flex justify-between p-4 swiper-navigation lg:hidden"
+            >
+              <button class="size-8 rounded bg-purple-950 navigation-prev-btn">
+                <i class="fa-solid fa-chevron-left"></i></button
+              ><button class="size-8 rounded bg-purple-950 navigation-next-btn">
+                <i class="fa-solid fa-chevron-right"></i>
+              </button>
+            </div>
             <!-- Tab Contents -->
 
             <div class="swiper works-swiper">
@@ -296,8 +332,12 @@
                   <div
                     class="content w-full mx-auto p-4 lg:p-8 rounded-2xl space-y-10 animate__animated animate__fadeIn"
                   >
-                    <div class="grid grid-cols-2 gap-8 items-end">
-                      <div class="space-y-4 col-span-full lg:col-span-1">
+                    <div
+                      class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-end"
+                    >
+                      <div class="space-y-4">
+                        <p class="text-sm">Wow3.app - 4/2024-7/2025</p>
+
                         <h3
                           class="text-2xl lg:lg:text-4xl font-black text-gradient"
                         >
@@ -391,7 +431,7 @@
                             <img
                               loading="lazy"
                               class="w-full"
-                              src="/public/wow3/wow3-1.png"
+                              src="/public/wow3/wow3-1.webp"
                             />
                           </div>
                           <div
@@ -400,7 +440,7 @@
                             <img
                               loading="lazy"
                               class="w-full"
-                              src="/public/wow3/wow3-2.png"
+                              src="/public/wow3/wow3-2.webp"
                             />
                           </div>
                           <div
@@ -409,7 +449,7 @@
                             <img
                               loading="lazy"
                               class="w-full"
-                              src="/public/wow3/wow3-3.png"
+                              src="/public/wow3/wow3-3.webp"
                             />
                           </div>
                           <div
@@ -418,7 +458,7 @@
                             <img
                               loading="lazy"
                               class="w-full"
-                              src="/public/wow3/wow3-4.png"
+                              src="/public/wow3/wow3-4.webp"
                             />
                           </div>
                           <div
@@ -427,7 +467,7 @@
                             <img
                               loading="lazy"
                               class="w-full"
-                              src="/public/wow3/wow3-5.png"
+                              src="/public/wow3/wow3-5.webp"
                             />
                           </div>
                           <div
@@ -436,7 +476,7 @@
                             <img
                               loading="lazy"
                               class="w-full"
-                              src="/public/wow3/wow3-6.png"
+                              src="/public/wow3/wow3-6.webp"
                             />
                           </div>
                           <div
@@ -445,7 +485,7 @@
                             <img
                               loading="lazy"
                               class="w-full"
-                              src="/public/wow3/wow3-7.png"
+                              src="/public/wow3/wow3-7.webp"
                             />
                           </div>
                           <div
@@ -454,7 +494,7 @@
                             <img
                               loading="lazy"
                               class="w-full"
-                              src="/public/wow3/wow3-8.png"
+                              src="/public/wow3/wow3-8.webp"
                             />
                           </div>
                           <div
@@ -463,7 +503,7 @@
                             <img
                               loading="lazy"
                               class="w-full"
-                              src="/public/wow3/wow3-9.png"
+                              src="/public/wow3/wow3-9.webp"
                             />
                           </div>
                           <div
@@ -472,7 +512,7 @@
                             <img
                               loading="lazy"
                               class="w-full"
-                              src="/public/wow3/wow3-10.png"
+                              src="/public/wow3/wow3-10.webp"
                             />
                           </div>
                           <div
@@ -481,7 +521,7 @@
                             <img
                               loading="lazy"
                               class="w-full"
-                              src="/public/wow3/wow3-11.png"
+                              src="/public/wow3/wow3-11.webp"
                             />
                           </div>
                         </div>
@@ -502,6 +542,9 @@
                       class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-end"
                     >
                       <div class="space-y-4">
+                        <p class="text-sm mb-4">
+                          Castlebird.com - 11/2022-4/2024
+                        </p>
                         <h3
                           class="text-2xl lg:text-4xl font-black text-gradient"
                         >
@@ -594,7 +637,7 @@
                             <img
                               loading="lazy"
                               class="w-full"
-                              src="/public/castlebird/castlebird-1.png"
+                              src="/public/castlebird/castlebird-1.webp"
                             />
                           </div>
                           <div
@@ -603,7 +646,7 @@
                             <img
                               loading="lazy"
                               class="w-full"
-                              src="/public/castlebird/castlebird-2.png"
+                              src="/public/castlebird/castlebird-2.webp"
                             />
                           </div>
                           <div
@@ -612,7 +655,7 @@
                             <img
                               loading="lazy"
                               class="w-full"
-                              src="/public/castlebird/castlebird-3.png"
+                              src="/public/castlebird/castlebird-3.webp"
                             />
                           </div>
                           <div
@@ -621,7 +664,7 @@
                             <img
                               loading="lazy"
                               class="w-full"
-                              src="/public/castlebird/castlebird-4.png"
+                              src="/public/castlebird/castlebird-4.webp"
                             />
                           </div>
                           <div
@@ -630,7 +673,7 @@
                             <img
                               loading="lazy"
                               class="w-full"
-                              src="/public/castlebird/castlebird-5.png"
+                              src="/public/castlebird/castlebird-5.webp"
                             />
                           </div>
                           <div
@@ -639,7 +682,7 @@
                             <img
                               loading="lazy"
                               class="w-full"
-                              src="/public/castlebird/castlebird-6.png"
+                              src="/public/castlebird/castlebird-6.webp"
                             />
                           </div>
                         </div>
@@ -660,6 +703,7 @@
                       class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start"
                     >
                       <div class="space-y-4">
+                        <p class="text-sm">Minerva - 2012</p>
                         <h3
                           class="text-2xl lg:text-4xl font-black text-gradient"
                         >
@@ -736,35 +780,35 @@
                             <img
                               loading="lazy"
                               class="w-full"
-                              src="/public/minerva/minerva-1.png"
+                              src="/public/minerva/minerva-1.webp"
                             />
                           </div>
                           <div class="swiper-slide">
                             <img
                               loading="lazy"
                               class="w-full"
-                              src="/public/minerva/minerva-2.png"
+                              src="/public/minerva/minerva-2.webp"
                             />
                           </div>
                           <div class="swiper-slide">
                             <img
                               loading="lazy"
                               class="w-full"
-                              src="/public/minerva/minerva-3.png"
+                              src="/public/minerva/minerva-3.webp"
                             />
                           </div>
                           <div class="swiper-slide">
                             <img
                               loading="lazy"
                               class="w-full"
-                              src="/public/minerva/minerva-4.png"
+                              src="/public/minerva/minerva-4.webp"
                             />
                           </div>
                           <div class="swiper-slide">
                             <img
                               loading="lazy"
                               class="w-full"
-                              src="/public/minerva/minerva-5.png"
+                              src="/public/minerva/minerva-5.webp"
                             />
                           </div>
                         </div>
@@ -785,8 +829,9 @@
       <section id="contact" class="highlight">
         <div
           class="container grid grid-cols-1 lg:grid-cols-2 gap-16 items-center justify-items-center"
+          data-aos="fade-right"
         >
-          <div class="space-y-4 lg:p-8 rounded-2xl">
+          <div class="space-y-4 lg:p-8 rounded-2xl hidden lg:block">
             <div class="flex flex-col space-y-1">
               <h2 class="text-4xl font-black text-gradient">
                 LET'S WORK TOGETHER
@@ -829,7 +874,7 @@
           <div
             class="lg:p-8 space-y-6 [&_h4]:text-xl [&_h4]:lg:text-2xl [&_h4]:font-bold w-full"
           >
-            <div class="flex items-center space-x-4">
+            <div class="flex items-center space-x-4" data-aos="fade-left">
               <div
                 class="size-12 rounded-full bg-purple-800 flex items-center justify-center"
               >
@@ -840,18 +885,18 @@
                 <h4>(+84) 961 048 128</h4>
               </div>
             </div>
-            <div class="flex items-center space-x-4">
+            <div class="flex items-center space-x-4" data-aos="fade-left">
               <div
                 class="size-12 rounded-full bg-purple-800 flex items-center justify-center"
               >
                 <i class="fa-solid fa-envelope"></i>
               </div>
-              <div class="flex flex-col">
+              <div class="flex flex-col flex-1 truncate">
                 <p>Mail</p>
                 <h4>nguyentrungdung61@gmail.com</h4>
               </div>
             </div>
-            <div class="flex items-center space-x-4">
+            <div class="flex items-center space-x-4" data-aos="fade-left">
               <div
                 class="size-12 rounded-full bg-purple-800 flex items-center justify-center"
               >
@@ -956,9 +1001,14 @@
 
     <script type="module" src="/src/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <!-- Initialize Swiper -->
     <script>
+      AOS.init({
+        once: true,
+      });
+
       const worksSwiper = new Swiper(".works-swiper", {
         spaceBetween: 16,
       });
@@ -966,7 +1016,7 @@
         slidesPerView: 1,
         spaceBetween: 16,
         autoplay: {
-          delay: 1000,
+          delay: 2000,
           disableOnInteraction: false,
         },
         pagination: {
@@ -984,7 +1034,7 @@
         slidesPerView: 1,
         spaceBetween: 16,
         autoplay: {
-          delay: 1000,
+          delay: 2000,
           disableOnInteraction: false,
         },
         pagination: {
@@ -1002,7 +1052,7 @@
         slidesPerView: 1,
         spaceBetween: 16,
         autoplay: {
-          delay: 1000,
+          delay: 2000,
           disableOnInteraction: false,
         },
         pagination: {
@@ -1014,6 +1064,22 @@
             spaceBetween: 24,
           },
         },
+      });
+
+      const swiperNextBtn = document.querySelector(
+        ".swiper-navigation .navigation-next-btn"
+      );
+      const swiperPrevBtn = document.querySelector(
+        ".swiper-navigation .navigation-prev-btn"
+      );
+
+      swiperNextBtn.addEventListener("click", () => {
+        console.log("Next button clicked");
+        worksSwiper.slideNext();
+      });
+      swiperPrevBtn.addEventListener("click", () => {
+        console.log("Prev button clicked");
+        worksSwiper.slidePrev();
       });
     </script>
   </body>

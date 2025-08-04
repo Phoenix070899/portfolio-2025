@@ -1,4 +1,13 @@
 const scrollTopBtn = document.getElementById("btnScrollUp");
+const openMenuBtn = document.getElementById("openMenuBtn");
+const closeMenuBtn = document.getElementById("closeMenuBtn");
+const mobileMenu = document.getElementById("mobile-menu");
+openMenuBtn.addEventListener("click", () => {
+  mobileMenu.classList.replace("translate-x-full", "translate-x-0");
+});
+closeMenuBtn.addEventListener("click", () => {
+  mobileMenu.classList.replace("translate-x-0", "translate-x-full");
+});
 
 // function handleClickWorkHeader() {
 //   const tabHeaders = document.querySelectorAll("#works-tab .header");
@@ -20,6 +29,8 @@ const scrollTopBtn = document.getElementById("btnScrollUp");
 //     });
 //   }
 // }
+
+const SCROLL_TOP_THRESHOLD = 20;
 
 const handleManipulateSwiper = () => {
   const tabHeaders = document.querySelectorAll("#works-tab .header");
@@ -53,6 +64,7 @@ const handleScrollBtns = () => {
         behavior: "smooth",
         block: "start",
       });
+      mobileMenu.classList.replace("translate-x-0", "translate-x-full");
     });
   });
 };
@@ -67,24 +79,14 @@ const handleScrollToTop = () => {
 };
 
 const handleToggleScrollBtn = () => {
-  if (window.scrollY > 20) {
-    scrollTopBtn?.classList.remove("animate__fadeOutDown");
+  if (window.scrollY > SCROLL_TOP_THRESHOLD) {
+    // scrollTopBtn?.classList.remove("animate__fadeOutDown");
     scrollTopBtn?.classList.remove("hidden");
-    scrollTopBtn?.classList.add("animate__fadeInUp");
+    // scrollTopBtn?.classList.add("animate__fadeInUp");
   } else {
     scrollTopBtn?.classList.add("hidden");
   }
 };
-
-const openMenuBtn = document.getElementById("openMenuBtn");
-const closeMenuBtn = document.getElementById("closeMenuBtn");
-const mobileMenu = document.getElementById("mobile-menu");
-openMenuBtn.addEventListener("click", () => {
-  mobileMenu.classList.replace("translate-x-full", "translate-x-0");
-});
-closeMenuBtn.addEventListener("click", () => {
-  mobileMenu.classList.replace("translate-x-0", "translate-x-full");
-});
 
 // Get the progress path element
 const progressPath = document.querySelector(".progress-circle path");
@@ -112,32 +114,30 @@ window.addEventListener("scroll", function () {
   }
 
   // Handle button visibility (your existing logic with improvements)
-  if (scrollTop > 100) {
-    console.log("show btn");
-    if (scrollTopBtn?.classList.contains("hidden") && !isAnimating) {
-      isAnimating = true;
+  if (scrollTop > SCROLL_TOP_THRESHOLD) {
+    if (scrollTopBtn?.classList.contains("hidden")) {
+      // isAnimating = true;
       scrollTopBtn.classList.remove("hidden");
-      scrollTopBtn.classList.remove("animate__fadeOutDown");
-      scrollTopBtn.classList.add("animate__fadeInUp");
+      // scrollTopBtn.dataset["data-aos"] = "fade-down";
+      // scrollTopBtn.classList.add("animate__fadeInUp");
 
-      scrollTopBtn.addEventListener("animationend", function resetShow() {
-        isAnimating = false;
-        scrollTopBtn.removeEventListener("animationend", resetShow);
-      });
+      // scrollTopBtn.addEventListener("animationend", function resetShow() {
+      //   isAnimating = false;
+      //   scrollTopBtn.removeEventListener("animationend", resetShow);
+      // });
     }
   } else {
-    console.log("hide btn");
-    if (!scrollTopBtn?.classList.contains("hidden") && !isAnimating) {
-      isAnimating = true;
-      scrollTopBtn.classList.remove("animate__fadeInUp");
-      scrollTopBtn.classList.add("animate__fadeOutDown");
+    if (!scrollTopBtn?.classList.contains("hidden")) {
+      // isAnimating = true;
+      // scrollTopBtn.classList.remove("animate__fadeInUp");
+      // scrollTopBtn.classList.add("animate__fadeOutDown");
 
-      scrollTopBtn.addEventListener("animationend", function resetHide() {
-        scrollTopBtn.classList.add("hidden");
-        scrollTopBtn.classList.remove("animate__fadeOutDown");
-        isAnimating = false;
-        scrollTopBtn.removeEventListener("animationend", resetHide);
-      });
+      scrollTopBtn.classList.add("hidden");
+      // scrollTopBtn.addEventListener("animationend", function resetHide() {
+      //   isAnimating = false;
+      //   scrollTopBtn.classList.remove("animate__fadeOutDown");
+      //   scrollTopBtn.removeEventListener("animationend", resetHide);
+      // });
     }
   }
 });
@@ -169,7 +169,8 @@ const handleSendMail = () => {
 
   // Open mail app
   try {
-    window.location.href = mailtoUrl;
+    // window.location.href = mailtoUrl;
+    window.open("mailto:test@example.com?subject=subject&body=body");
 
     // Optional: Show success message
   } catch (error) {
